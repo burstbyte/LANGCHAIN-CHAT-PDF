@@ -10,6 +10,18 @@ from langchain.callbacks import get_openai_callback
 
 from PIL import Image
 
+import openai
+# Update this line with your new API key
+# new_api_key = "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"
+
+# Set the new API key
+# openai.api_key = new_api_key
+
+# Print the API key for verification
+print("Using API key:", openai.api_key)
+
+# Now make your OpenAI API requests as usual
+
 def main():
     load_dotenv()
     st.set_page_config(page_title="AI project by FFS")
